@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PaperScience.BasisWeightConversions">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="CornflowerBlue">
+
+                <Frame BackgroundColor="White" Margin="10, 10, 10, 0" Padding="10, 10, 10, 10" BorderColor="Black">
+                    <Label x:Name="title" Text="Basis Weight Conversions" HorizontalOptions="Center" FontSize="20" FontAttributes="Bold" TextColor="Black"></Label>
+                </Frame>
+
+                <StackLayout VerticalOptions="StartAndExpand">
+                    <StackLayout>
+                        <Frame BackgroundColor="CornflowerBlue" Margin="10, 0, 10, 0" Padding="10, -30, 10, 10" HasShadow="False">
+                            <Grid>
+                                <Label x:Name="s" TextColor="Black" Text="US" FontAttributes="Bold" FontSize="20" HorizontalOptions="Center" Grid.Row="1" Margin="0, 10, 0, 0"></Label>
+                                <Switch x:Name="units" HorizontalOptions="End" Toggled="Units_Toggled" Grid.Row="1"></Switch>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+                    
+                    <StackLayout>
+                        <Frame BackgroundColor="White" Margin="10, 0, 10, 0" Padding="10, -60, 10, 10" BorderColor="Black">
+                            <Grid>
+                                <Label x:Name="label1" Text="Offset (lb/3300 ft&#x00B2;)" HorizontalOptions="Start" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="2"></Label>
+                                <Entry x:Name="e1" FontAttributes="Bold"  HorizontalTextAlignment="Center" HorizontalOptions="End" BackgroundColor="White" TextColor="Black" FontSize="18" Grid.Row="2" WidthRequest="75" HeightRequest="40" ></Entry>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout>
+                        <Frame x:Name="answer1Frame" IsVisible="False" BackgroundColor="White" Margin="75, 10, 75, 10" Padding="0, -10, 0, 20">
+                            <Grid>
+                                <Label x:Name="al1" HorizontalOptions="Center" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="1"></Label>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+
+                    <StackLayout>
+                        <Frame BackgroundColor="White" Margin="10, 0, 10, 0" Padding="10, -60, 10, 10" BorderColor="Black">
+                            <Grid>
+                                <Label x:Name="label2" Text="Bond (lb/1300 ft&#x00B2;)" HorizontalOptions="Start" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="2"></Label>
+                                <Entry x:Name="e2" FontAttributes="Bold"  HorizontalTextAlignment="Center" HorizontalOptions="End" BackgroundColor="White" TextColor="Black" FontSize="18" Grid.Row="2" WidthRequest="75" HeightRequest="40" ></Entry>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout>
+                        <Frame x:Name="answer2Frame" IsVisible="False" BackgroundColor="White" Margin="75, 10, 75, 10" Padding="0, -10, 0, 20">
+                            <Grid>
+                                <Label x:Name="al2" HorizontalOptions="Center" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="1"></Label>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+
+                    <StackLayout>
+                        <Frame BackgroundColor="White" Margin="10, 0, 10, 0" Padding="10, -60, 10, 10" BorderColor="Black">
+                            <Grid>
+                                <Label x:Name="label3" Text="Liner (lb/1000 ft&#x00B2;)" HorizontalOptions="Start" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="2"></Label>
+                                <Entry x:Name="e3" FontAttributes="Bold"  HorizontalTextAlignment="Center" HorizontalOptions="End" BackgroundColor="White" TextColor="Black" FontSize="18" Grid.Row="2" WidthRequest="75" HeightRequest="40" ></Entry>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout>
+                        <Frame x:Name="answer3Frame" IsVisible="False" BackgroundColor="White" Margin="75, 10, 75, 10" Padding="0, -10, 0, 20">
+                            <Grid>
+                                <Label x:Name="al3" HorizontalOptions="Center" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="1"></Label>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+
+                    <StackLayout>
+                        <Frame BackgroundColor="White" Margin="10, 0, 10, 0" Padding="10, -60, 10, 10" BorderColor="Black">
+                            <Grid>
+                                <Label x:Name="label4" Text="News and Tissue (lb/3000 ft&#x00B2;)" HorizontalOptions="Start" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="2"></Label>
+                                <Entry x:Name="e4" FontAttributes="Bold"  HorizontalTextAlignment="Center" HorizontalOptions="End" BackgroundColor="White" TextColor="Black" FontSize="18" Grid.Row="2" WidthRequest="75" HeightRequest="40" ></Entry>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout>
+                        <Frame x:Name="answer4Frame" IsVisible="False" BackgroundColor="White" Margin="75, 10, 75, 10" Padding="0, -10, 0, 20">
+                            <Grid>
+                                <Label x:Name="al4" HorizontalOptions="Center" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="1"></Label>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+
+                    <StackLayout>
+                        <Frame BackgroundColor="White" Margin="10, 0, 10, 0" Padding="10, -60, 10, 10" BorderColor="Black">
+                            <Grid>
+                                <Label x:Name="label5" Text="Market Pulp (lb/2880 ft&#x00B2;)" HorizontalOptions="Start" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="2"></Label>
+                                <Entry x:Name="e5" FontAttributes="Bold" HorizontalTextAlignment="Center" HorizontalOptions="End" BackgroundColor="White" TextColor="Black" FontSize="18" Grid.Row="2" WidthRequest="75" HeightRequest="40" ></Entry>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout>
+                        <Frame x:Name="answer5Frame" IsVisible="False" BackgroundColor="White" Margin="75, 10, 75, 10" Padding="0, -10, 0, 20">
+                            <Grid>
+                                <Label x:Name="al5" HorizontalOptions="Center" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="1"></Label>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+
+                    <Button Text="Calculate" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" FontAttributes="Bold" FontSize="18" HeightRequest="50" WidthRequest="150" 
+                            BorderColor="Black" BorderWidth="1" Margin="0, 15, 0, 15" Clicked="Button_Clicked"/>
+
+                    <StackLayout>
+                        <Frame x:Name="errorFrame" IsVisible="False" BackgroundColor="White" Margin="75, 10, 75, 10" Padding="0, -10, 0, 20">
+                            <Grid>
+                                <Label x:Name="error" Text="error" HorizontalOptions="Center" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="1"></Label>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

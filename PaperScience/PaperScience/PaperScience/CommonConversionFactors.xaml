@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PaperScience.CommonConversionFactors">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="CornflowerBlue">
+
+                <Frame BackgroundColor="White" Margin="10, 10, 10, 0" Padding="10, 10, 10, 10" BorderColor="Black">
+                    <Label x:Name="title" Text="Common Conversion Factors" HorizontalOptions="Center" FontSize="20" FontAttributes="Bold" TextColor="Black"></Label>
+                </Frame>
+
+                <StackLayout>
+                    <Frame BackgroundColor="CornflowerBlue" Margin="10, 0, 10, 0" Padding="10, -30, 10, 10" HasShadow="False">
+                        <Grid>
+                            <Label x:Name="s" TextColor="Black" Text="US" FontAttributes="Bold" FontSize="20" HorizontalOptions="Center" Grid.Row="1" Margin="0, 10, 0, 0"></Label>
+                            <Switch x:Name="units" HorizontalOptions="End" Toggled="Units_Toggled" Grid.Row="1"></Switch>
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout VerticalOptions="StartAndExpand">
+                    <StackLayout>
+                        <Frame BackgroundColor="White" Margin="10, 0, 10, 0" Padding="10, -30, 10, 10" BorderColor="Black">
+                            <Grid>
+                                <Label x:Name="label1" Text="Horsepower" HorizontalOptions="Start" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="1"></Label>
+                                <Entry x:Name="entry1" FontAttributes="Bold"  HorizontalTextAlignment="Center" HorizontalOptions="End" BackgroundColor="White" TextColor="Black" FontSize="18" Grid.Row="1" WidthRequest="75" HeightRequest="40" ></Entry>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout>
+                        <Frame x:Name="answer1Frame" IsVisible="False" BackgroundColor="White" Margin="10, 10, 10, 10" Padding="0, -10, 0, 20">
+                            <Grid>
+                                <Label x:Name="answer11" HorizontalOptions="Center" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="1"></Label>
+                                <Label x:Name="answer12" IsVisible="False" HorizontalOptions="Center" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="2"></Label>
+                                <Label x:Name="answer13" IsVisible="False" HorizontalOptions="Center" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="3"></Label>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+
+                    <Button Text="Calculate" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" FontAttributes="Bold" FontSize="18" HeightRequest="50" WidthRequest="150" 
+                            BorderColor="Black" BorderWidth="1" Margin="0, 15, 0, 15" Clicked="Button_Clicked2"/>
+
+                    <StackLayout>
+                        <Frame BackgroundColor="White" Margin="10, 0, 10, 0" Padding="10, -30, 10, 10" BorderColor="Black">
+                            <Grid>
+                                <Label x:Name="electricHP" Text="Electric HP" HorizontalOptions="Center" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="1"></Label>
+                                <Label x:Name="label2" Text="Amps" HorizontalOptions="Start" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="2"></Label>
+                                <Entry x:Name="entry2" FontAttributes="Bold"  HorizontalTextAlignment="Center" HorizontalOptions="End" BackgroundColor="White" TextColor="Black" FontSize="18" Grid.Row="2" WidthRequest="75" HeightRequest="40" ></Entry>
+
+                                <Label x:Name="label3" Text="Volts" HorizontalOptions="Start" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="3"></Label>
+                                <Entry x:Name="entry3" FontAttributes="Bold"  HorizontalTextAlignment="Center" HorizontalOptions="End" BackgroundColor="White" TextColor="Black" FontSize="18" Grid.Row="3" WidthRequest="75" HeightRequest="40" ></Entry>
+
+                                <Label x:Name="label4" Text="Decimal efficiency" HorizontalOptions="Start" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="4"></Label>
+                                <Entry x:Name="entry4" FontAttributes="Bold"  HorizontalTextAlignment="Center" HorizontalOptions="End" BackgroundColor="White" TextColor="Black" FontSize="18" Grid.Row="4" WidthRequest="75" HeightRequest="40" ></Entry>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout>
+                        <Frame x:Name="answer2Frame" IsVisible="False" BackgroundColor="White" Margin="75, 10, 75, 10" Padding="0, -10, 0, 20">
+                            <Grid>
+                                <Label x:Name="answer2" HorizontalOptions="Center" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="1"></Label>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+
+                    <Button Text="Calculate" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" FontAttributes="Bold" FontSize="18" HeightRequest="50" WidthRequest="150" 
+                            BorderColor="Black" BorderWidth="1" Margin="0, 15, 0, 15" Clicked="Button_Clicked3"/>
+
+                    <StackLayout>
+                        <Frame BackgroundColor="White" Margin="10, 0, 10, 0" Padding="10, -60, 10, 10" BorderColor="Black">
+                            <Grid>
+                                <Label x:Name="label5" Text="lb/ft&#x00B3; to lb/gal" HorizontalOptions="Start" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="2"></Label>
+                                <Entry x:Name="entry5" FontAttributes="Bold" HorizontalTextAlignment="Center" HorizontalOptions="End" BackgroundColor="White" TextColor="Black" FontSize="18" Grid.Row="2" WidthRequest="75" HeightRequest="40" ></Entry>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout>
+                        <Frame x:Name="answer3Frame" IsVisible="False" BackgroundColor="White" Margin="75, 10, 75, 10" Padding="0, -10, 0, 20">
+                            <Grid>
+                                <Label x:Name="answer3" HorizontalOptions="Center" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="1"></Label>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+
+                    <Button Text="Calculate" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" FontAttributes="Bold" FontSize="18" HeightRequest="50" WidthRequest="150" 
+                            BorderColor="Black" BorderWidth="1" Margin="0, 15, 0, 15" Clicked="Button_Clicked4"/>
+
+                    <StackLayout>
+                        <Frame BackgroundColor="White" Margin="10, 0, 10, 0" Padding="10, -60, 10, 10" BorderColor="Black">
+                            <Grid>
+                                <Label x:Name="label5Reverse" Text="lb/gal to lb/ft&#x00B3;" HorizontalOptions="Start" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="2"></Label>
+                                <Entry x:Name="entry5Reverse" FontAttributes="Bold" HorizontalTextAlignment="Center" HorizontalOptions="End" BackgroundColor="White" TextColor="Black" FontSize="18" Grid.Row="2" WidthRequest="75" HeightRequest="40" ></Entry>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout>
+                        <Frame x:Name="answer3FrameReverse" IsVisible="False" BackgroundColor="White" Margin="75, 10, 75, 10" Padding="0, -10, 0, 20">
+                            <Grid>
+                                <Label x:Name="answer3Reverse" HorizontalOptions="Center" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="1"></Label>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+
+                    <Button Text="Calculate" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" FontAttributes="Bold" FontSize="18" HeightRequest="50" WidthRequest="150" 
+                            BorderColor="Black" BorderWidth="1" Margin="0, 15, 0, 15" Clicked="Button_Clicked5"/>
+
+                    <StackLayout>
+                        <Frame BackgroundColor="White" Margin="10, 0, 10, 0" Padding="10, -60, 10, 10" BorderColor="Black">
+                            <Grid>
+                                <Label x:Name="label6" Text="Imp. gallons to liters" HorizontalOptions="Start" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="2"></Label>
+                                <Entry x:Name="entry6" FontAttributes="Bold" HorizontalTextAlignment="Center" HorizontalOptions="End" BackgroundColor="White" TextColor="Black" FontSize="18" Grid.Row="2" WidthRequest="75" HeightRequest="40" ></Entry>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout>
+                        <Frame x:Name="answer4Frame" IsVisible="False" BackgroundColor="White" Margin="75, 10, 75, 10" Padding="0, -10, 0, 20">
+                            <Grid>
+                                <Label x:Name="answer4" HorizontalOptions="Center" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="1"></Label>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+
+                    <Button Text="Calculate" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" FontAttributes="Bold" FontSize="18" HeightRequest="50" WidthRequest="150" 
+                            BorderColor="Black" BorderWidth="1" Margin="0, 15, 0, 15" Clicked="Button_Clicked6"/>
+
+                    <StackLayout>
+                        <Frame BackgroundColor="White" Margin="10, 0, 10, 0" Padding="10, -60, 10, 10" BorderColor="Black">
+                            <Grid>
+                                <Label x:Name="label6Reverse" Text="Liters to imp. gallons" HorizontalOptions="Start" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="2"></Label>
+                                <Entry x:Name="entry6Reverse" FontAttributes="Bold" HorizontalTextAlignment="Center" HorizontalOptions="End" BackgroundColor="White" TextColor="Black" FontSize="18" Grid.Row="2" WidthRequest="75" HeightRequest="40" ></Entry>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout>
+                        <Frame x:Name="answer4FrameReverse" IsVisible="False" BackgroundColor="White" Margin="75, 10, 75, 10" Padding="0, -10, 0, 20">
+                            <Grid>
+                                <Label x:Name="answer4Reverse" HorizontalOptions="Center" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="1"></Label>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+
+                    <Button Text="Calculate" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" FontAttributes="Bold" FontSize="18" HeightRequest="50" WidthRequest="150" 
+                            BorderColor="Black" BorderWidth="1" Margin="0, 15, 0, 15" Clicked="Button_Clicked7"/>
+
+                    <StackLayout>
+                        <Frame BackgroundColor="White" Margin="10, 0, 10, 0" Padding="10, -60, 10, 10" BorderColor="Black">
+                            <Grid>
+                                <Label x:Name="label7" Text="lbs/3000ft&#x00B2; to g/m&#x00B2;" HorizontalOptions="Start" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="2"></Label>
+                                <Entry x:Name="entry7" FontAttributes="Bold" HorizontalTextAlignment="Center" HorizontalOptions="End" BackgroundColor="White" TextColor="Black" FontSize="18" Grid.Row="2" WidthRequest="75" HeightRequest="40" ></Entry>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout>
+                        <Frame x:Name="answer5Frame" IsVisible="False" BackgroundColor="White" Margin="75, 10, 75, 10" Padding="0, -10, 0, 20">
+                            <Grid>
+                                <Label x:Name="answer5" HorizontalOptions="Center" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="1"></Label>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+
+                    <Button Text="Calculate" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" FontAttributes="Bold" FontSize="18" HeightRequest="50" WidthRequest="150" 
+                            BorderColor="Black" BorderWidth="1" Margin="0, 15, 0, 15" Clicked="Button_Clicked8"/>
+
+                    <StackLayout>
+                        <Frame BackgroundColor="White" Margin="10, 0, 10, 0" Padding="10, -60, 10, 10" BorderColor="Black">
+                            <Grid>
+                                <Label x:Name="label8" Text="&#176;F to &#176;C" HorizontalOptions="Start" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="2"></Label>
+                                <Entry x:Name="entry8" FontAttributes="Bold" HorizontalTextAlignment="Center" HorizontalOptions="End" BackgroundColor="White" TextColor="Black" FontSize="18" Grid.Row="2" WidthRequest="75" HeightRequest="40" ></Entry>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout>
+                        <Frame x:Name="answer6Frame" IsVisible="False" BackgroundColor="White" Margin="75, 10, 75, 10" Padding="0, -10, 0, 20">
+                            <Grid>
+                                <Label x:Name="answer6" HorizontalOptions="Center" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="1"></Label>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+
+                    <Button Text="Calculate" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" FontAttributes="Bold" FontSize="18" HeightRequest="50" WidthRequest="150" 
+                            BorderColor="Black" BorderWidth="1" Margin="0, 15, 0, 15" Clicked="Button_Clicked9"/>
+
+                    <StackLayout>
+                        <Frame BackgroundColor="White" Margin="10, 0, 10, 0" Padding="10, -60, 10, 10" BorderColor="Black">
+                            <Grid>
+                                <Label x:Name="label9" Text="lbf/in. to kN/m" HorizontalOptions="Start" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="2"></Label>
+                                <Entry x:Name="entry9" FontAttributes="Bold" HorizontalTextAlignment="Center" HorizontalOptions="End" BackgroundColor="White" TextColor="Black" FontSize="18" Grid.Row="2" WidthRequest="75" HeightRequest="40" ></Entry>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout>
+                        <Frame x:Name="answer7Frame" IsVisible="False" BackgroundColor="White" Margin="75, 10, 75, 10" Padding="0, -10, 0, 20">
+                            <Grid>
+                                <Label x:Name="answer7" HorizontalOptions="Center" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="1"></Label>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+
+                    <Button Text="Calculate" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" FontAttributes="Bold" FontSize="18" HeightRequest="50" WidthRequest="150" 
+                            BorderColor="Black" BorderWidth="1" Margin="0, 15, 0, 15" Clicked="Button_Clicked10"/>
+
+                    <StackLayout>
+                        <Frame BackgroundColor="White" Margin="10, 0, 10, 0" Padding="10, -60, 10, 10" BorderColor="Black">
+                            <Grid>
+                                <Label x:Name="label10" Text="lbf/in. to kg/cm" HorizontalOptions="Start" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="2"></Label>
+                                <Entry x:Name="entry10" FontAttributes="Bold" HorizontalTextAlignment="Center" HorizontalOptions="End" BackgroundColor="White" TextColor="Black" FontSize="18" Grid.Row="2" WidthRequest="75" HeightRequest="40" ></Entry>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout>
+                        <Frame x:Name="answer8Frame" IsVisible="False" BackgroundColor="White" Margin="75, 10, 75, 10" Padding="0, -10, 0, 20">
+                            <Grid>
+                                <Label x:Name="answer8" HorizontalOptions="Center" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="1"></Label>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+
+                    <Button Text="Calculate" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" FontAttributes="Bold" FontSize="18" HeightRequest="50" WidthRequest="150" 
+                            BorderColor="Black" BorderWidth="1" Margin="0, 15, 0, 15" Clicked="Button_Clicked11"/>
+
+                    <StackLayout>
+                        <Frame BackgroundColor="White" Margin="10, 0, 10, 0" Padding="10, -60, 10, 10" BorderColor="Black">
+                            <Grid>
+                                <Label x:Name="label11" Text="Short ton to metric ton" HorizontalOptions="Start" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="2"></Label>
+                                <Entry x:Name="entry11" FontAttributes="Bold" HorizontalTextAlignment="Center" HorizontalOptions="End" BackgroundColor="White" TextColor="Black" FontSize="18" Grid.Row="2" WidthRequest="75" HeightRequest="40" ></Entry>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout>
+                        <Frame x:Name="answer9Frame" IsVisible="False" BackgroundColor="White" Margin="75, 10, 75, 10" Padding="0, -10, 0, 20">
+                            <Grid>
+                                <Label x:Name="answer9" HorizontalOptions="Center" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="1"></Label>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+
+                    <Button Text="Calculate" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" FontAttributes="Bold" FontSize="18" HeightRequest="50" WidthRequest="150" 
+                            BorderColor="Black" BorderWidth="1" Margin="0, 15, 0, 15" Clicked="Button_Clicked12"/>
+
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

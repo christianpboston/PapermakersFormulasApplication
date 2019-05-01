@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PaperScience.FlowsTonsConsistencyRelationship">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="CornflowerBlue">
+
+                <Frame BackgroundColor="White" Margin="10, 10, 10, 0" Padding="10, 10, 10, 10" BorderColor="Black">
+                    <Label x:Name="title" Text="F/T/C Relationship" FontAttributes="Bold" HorizontalOptions="Center" FontSize="20" TextColor="Black"></Label>
+                </Frame>
+                <StackLayout VerticalOptions="StartAndExpand">
+
+                    <StackLayout>
+                        <Frame BackgroundColor="White" Margin="10, 0, 10, 0" Padding="10, -30, 10, 10" BorderColor="Black">
+                            <Grid>
+                                <Label x:Name="s" TextColor="Black" Text="US" HorizontalOptions="Center"  FontAttributes="Bold" FontSize="20" Grid.Row="1"></Label>
+                                <Switch x:Name="units" HorizontalOptions="End" Toggled="Units_Toggled" Grid.Row="1" Margin="0, -10, 10, 0"></Switch>
+
+                                <Label x:Name="label1" Text="Consistency (%)" HorizontalOptions="Start" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="2"></Label>
+                                <Entry x:Name="C" FontAttributes="Bold"  HorizontalTextAlignment="Center" HorizontalOptions="End" BackgroundColor="White" TextColor="Black" FontSize="18" Grid.Row="2" WidthRequest="75" HeightRequest="40" ></Entry>
+
+                                <Label x:Name="label2" Text="Flow (gal/min)" HorizontalOptions="Start" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="3"></Label>
+                                <Entry x:Name="Q" FontAttributes="Bold"  HorizontalTextAlignment="Center" HorizontalOptions="End" BackgroundColor="White" TextColor="Black" FontSize="18" Grid.Row="3" WidthRequest="75" HeightRequest="40" ></Entry>
+
+                                <Label x:Name="label3" Text="Temperature factor" HorizontalOptions="Start" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="4"></Label>
+                                <Entry x:Name="K" FontAttributes="Bold"  HorizontalTextAlignment="Center" HorizontalOptions="End" BackgroundColor="White" TextColor="Black" FontSize="18" Grid.Row="4" WidthRequest="75" HeightRequest="40" ></Entry>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+
+                    <Button Text="Calculate" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" FontAttributes="Bold" FontSize="18" HeightRequest="50" WidthRequest="150" 
+                            BorderColor="Black" BorderWidth="1" Margin="0, 15, 0, 15" Clicked="Button_Clicked"/>
+
+                    <StackLayout>
+                        <Frame x:Name="answer" IsVisible="False" BackgroundColor="White" Margin="75, 0, 75, 10" Padding="0, -10, 0, 20">
+                            <Grid>
+                                <Label x:Name="label4" Text="Ton/d" FontAttributes="Bold" HorizontalOptions="Center" FontSize="18" TextColor="Black" Grid.Row="1"></Label>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+                    
+                    <StackLayout>
+                        <Frame BackgroundColor="White" Margin="10, 0, 10, 0" Padding="10, -10, 10, 10" BorderColor="Black">
+                            <Grid>
+                                <Label x:Name="one" Text="T (&#176;F)" HorizontalOptions="Start" FontSize="16" FontAttributes="Bold" TextColor="Black" Grid.Row="1"></Label>
+                                <Label x:Name="two" Text="T (&#176;C)" HorizontalOptions="Center" FontSize="16" FontAttributes="Bold" TextColor="Black" Grid.Row="1"></Label>
+                                <Label x:Name="three" Text="K" HorizontalOptions="End" FontSize="16" FontAttributes="Bold" TextColor="Black" Grid.Row="1"></Label>
+
+                                <Label x:Name="four" Text="100" HorizontalOptions="Start" FontSize="16" FontAttributes="Bold" TextColor="Black" Grid.Row="2"></Label>
+                                <Label x:Name="five" Text="37.8" HorizontalOptions="Center" FontSize="16" FontAttributes="Bold" TextColor="Black" Grid.Row="2"></Label>
+                                <Label x:Name="six" Text="16.76" HorizontalOptions="End" FontSize="16" FontAttributes="Bold" TextColor="Black" Grid.Row="2"></Label>
+
+                                <Label x:Name="seven" Text="120" HorizontalOptions="Start" FontSize="16" FontAttributes="Bold" TextColor="Black" Grid.Row="3"></Label>
+                                <Label x:Name="eight" Text="48.9" HorizontalOptions="Center" FontSize="16" FontAttributes="Bold" TextColor="Black" Grid.Row="3"></Label>
+                                <Label x:Name="nine" Text="16.83" HorizontalOptions="End" FontSize="16" FontAttributes="Bold" TextColor="Black" Grid.Row="3"></Label>
+
+                                <Label x:Name="ten" Text="140" HorizontalOptions="Start" FontSize="16" FontAttributes="Bold" TextColor="Black" Grid.Row="4"></Label>
+                                <Label x:Name="eleven" Text="60" HorizontalOptions="Center" FontSize="16" FontAttributes="Bold" TextColor="Black" Grid.Row="4"></Label>
+                                <Label x:Name="twelve" Text="16.93" HorizontalOptions="End" FontSize="16" FontAttributes="Bold" TextColor="Black" Grid.Row="4"></Label>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

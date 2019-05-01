@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PaperScience.PaperCaliper">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="CornflowerBlue">
+
+                <Frame BackgroundColor="White" Margin="10, 10, 10, 0" Padding="10, 10, 10, 10" BorderColor="Black">
+                    <Label x:Name="title" Text="Paper Caliper" FontAttributes="Bold" HorizontalOptions="Center" FontSize="20" TextColor="Black"></Label>
+                </Frame>
+
+                <StackLayout VerticalOptions="StartAndExpand">
+                    <StackLayout>
+                        <Frame BackgroundColor="White" Margin="10, 0, 10, 0" Padding="10, -30, 10, 10" BorderColor="Black">
+                            <Grid>
+                                <Label x:Name="s" TextColor="Black" Text="US" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" Grid.Row="1"></Label>
+                                <Switch x:Name="units" HorizontalOptions="End" Toggled="Units_Toggled" Grid.Row="1" Margin="0, -10, 10, 0"></Switch>
+
+                                <Label x:Name="label1" Text="Basis weight (lbs/ft&#x00B2;)" HorizontalOptions="Start" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="2"></Label>
+                                <Entry x:Name="BW" FontAttributes="Bold"  HorizontalTextAlignment="Center" HorizontalOptions="End"  TextColor="Black" FontSize="18" Grid.Row="2" WidthRequest="75" HeightRequest="40" ></Entry>
+
+                                <Label x:Name="label2" Text="Ream (ft&#x00B2;)" HorizontalOptions="Start" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="3"></Label>
+                                <Entry x:Name="R" FontAttributes="Bold"  HorizontalTextAlignment="Center" HorizontalOptions="End"  TextColor="Black" FontSize="18" Grid.Row="3" WidthRequest="75" HeightRequest="40" ></Entry>
+
+                                <Label x:Name="label3" Text="Density (lb/in&#x00B3;)" HorizontalOptions="Start" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="4"></Label>
+                                <Entry x:Name="D" FontAttributes="Bold"  HorizontalTextAlignment="Center" HorizontalOptions="End"  TextColor="Black" FontSize="18" Grid.Row="4" WidthRequest="75" HeightRequest="40" ></Entry>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+
+                    <Button Text="Calculate" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" FontAttributes="Bold" FontSize="18" HeightRequest="50" WidthRequest="150" 
+                            BorderColor="Black" BorderWidth="1" Margin="0, 15, 0, 15" Clicked="Button_Clicked"/>
+
+                    <StackLayout>
+                        <Frame x:Name="answer" IsVisible="False" BackgroundColor="White" Margin="75, 0, 75, 10" Padding="0, -10, 0, 20">
+                            <Grid>
+                                <Label x:Name="label4" Text="Caliper (in.)" HorizontalOptions="Center" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="1"></Label>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+
+                    <StackLayout>
+                        <Frame BackgroundColor="White" Margin="10, 0, 10, 10" Padding="10, -10, 10, 10" BorderColor="Black">
+                            <Grid>
+                                <Label x:Name="header1" Text="Grade" FontAttributes="Bold" HorizontalOptions="Start" FontSize="18" TextColor="Black" Grid.Row="1"></Label>
+                                <Label x:Name="header2" Text="Density (lb/in&#x00B3;)" FontAttributes="Bold" HorizontalOptions="Center" FontSize="18" TextColor="Black" Grid.Row="1" Margin="0, 0, 50, 0"></Label>
+                                <Label x:Name="header3" Text="Density (kg/m&#x00B3;)" FontAttributes="Bold" HorizontalOptions="End" FontSize="18" TextColor="Black" Grid.Row="1"></Label>
+
+                                <Label x:Name="row11" Text="Coated&#x0a;Supercalendered" FontAttributes="Bold,Italic" HorizontalOptions="Start" FontSize="16" TextColor="Black" Grid.Row="2"></Label>
+                                <Label x:Name="row12" Text="0.042" HorizontalOptions="Center" FontAttributes="Bold" FontSize="16" TextColor="Black" Grid.Row="2"></Label>
+                                <Label x:Name="row13" Text="1162.56" FontAttributes="Bold" HorizontalOptions="End" FontSize="16" TextColor="Black" Grid.Row="2"></Label>
+
+                                <Label x:Name="row21" Text="Coated only" FontAttributes="Bold,Italic" HorizontalOptions="Start" FontSize="16" TextColor="Black" Grid.Row="3"></Label>
+                                <Label x:Name="row22" Text="0.038" HorizontalOptions="Center" FontAttributes="Bold" FontSize="16" TextColor="Black" Grid.Row="3"></Label>
+                                <Label x:Name="row23" Text="1051.84" HorizontalOptions="End" FontAttributes="Bold" FontSize="16" TextColor="Black" Grid.Row="3"></Label>
+
+                                <Label x:Name="row31" Text="Newsprint" FontAttributes="Bold,Italic" HorizontalOptions="Start" FontSize="16" TextColor="Black" Grid.Row="4"></Label>
+                                <Label x:Name="row32" Text="0.023" HorizontalOptions="Center" FontSize="16" FontAttributes="Bold" TextColor="Black" Grid.Row="4"></Label>
+                                <Label x:Name="row33" Text="636.64" HorizontalOptions="End" FontAttributes="Bold" FontSize="16" TextColor="Black" Grid.Row="4"></Label>
+
+                                <Label x:Name="row41" Text="Fine Paper" HorizontalOptions="Start" FontSize="16" FontAttributes="Bold,Italic" TextColor="Black" Grid.Row="5"></Label>
+                                <Label x:Name="row42" Text="0.029" HorizontalOptions="Center" FontSize="16" FontAttributes="Bold" TextColor="Black" Grid.Row="5"></Label>
+                                <Label x:Name="row43" Text="802.72" HorizontalOptions="End" FontAttributes="Bold" FontSize="16" TextColor="Black" Grid.Row="5"></Label>
+
+                                <Label x:Name="row51" Text="Linerboard" HorizontalOptions="Start" FontSize="16" FontAttributes="Bold,Italic" TextColor="Black" Grid.Row="6"></Label>
+                                <Label x:Name="row52" Text="0.024" HorizontalOptions="Center" FontSize="16" FontAttributes="Bold" TextColor="Black" Grid.Row="6"></Label>
+                                <Label x:Name="row53" Text="664.32" HorizontalOptions="End" FontAttributes="Bold" FontSize="16" TextColor="Black" Grid.Row="6"></Label>
+
+                                <Label x:Name="row61" Text="Board (Coated)" HorizontalOptions="Start" FontSize="16" FontAttributes="Bold,Italic" TextColor="Black" Grid.Row="7"></Label>
+                                <Label x:Name="row62" Text="0.028" HorizontalOptions="Center" FontSize="16" FontAttributes="Bold" TextColor="Black" Grid.Row="7"></Label>
+                                <Label x:Name="row63" Text="775.04" HorizontalOptions="End" FontAttributes="Bold" FontSize="16" TextColor="Black" Grid.Row="7"></Label>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

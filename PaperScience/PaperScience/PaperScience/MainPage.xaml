@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PaperScience"
+             x:Class="PaperScience.MainPage">
+
+  <ScrollView BackgroundColor="CornflowerBlue">
+        <StackLayout>
+            <StackLayout VerticalOptions="StartAndExpand">
+                <StackLayout>
+                    <Frame BackgroundColor="CornflowerBlue" Padding="20, -30, 20, 0">
+                        <Grid>
+                            <Button Text="Approximate Critical Speed of Roll" HorizontalOptions="Center" BackgroundColor="White" FontAttributes="Bold" FontSize="18" TextColor="Black" Grid.Row="1" BorderRadius="15" BorderColor="Black" BorderWidth="1" 
+                            WidthRequest="400" Clicked="ApproximateCriticalSpeedOfRoll"/>
+                            <Button Text="Approximate Spouting Velocity" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="2" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontAttributes="Bold" FontSize="18" 
+                            WidthRequest="400" Clicked="ApproximateSpoutingVelocity"/>
+                            <Button Text="Basis Weight Conversions" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="3" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontAttributes="Bold" FontSize="18" 
+                            WidthRequest="400" Clicked="BasisWeightConversions"/>
+                            <Button Text="Change in Crown" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="4" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontAttributes="Bold" FontSize="18"  
+                            WidthRequest="400" Clicked="ChangeInCrownOfTwoRolls"/>
+                            <Button Text="Common Conversion Factors" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="5" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontAttributes="Bold" FontSize="18" 
+                            WidthRequest="400" Clicked="CommonConversionFactors"/>
+                            <Button Text="Component Drag Load" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="6" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontAttributes="Bold" FontSize="18" 
+                            WidthRequest="400" Clicked="ComponentDragLoad"/>
+                            <Button Text="Critical Speed of Calender Roll" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="7" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontAttributes="Bold" FontSize="18"  
+                            WidthRequest="400" Clicked="CriticalSpeedOfCalenderRoll"/>
+                            <Button Text="Dandy Roll Rotational Speed" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="8" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontAttributes="Bold" FontSize="18" 
+                            WidthRequest="400" Clicked="DandyRollRotationalSpeed"/>
+                            <Button Text="Deflection" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="9" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontAttributes="Bold" FontSize="18" 
+                            WidthRequest="400" Clicked="DeflectionOfRollOverFace"/>
+                            <Button Text="Drag Load - Conventional" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="10" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontSize="18" FontAttributes="Bold" 
+                            WidthRequest="400" Clicked="DragLoadConventional"/>
+                            <Button Text="Dryer Felt Tension" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="11" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontSize="18" FontAttributes="Bold" 
+                            WidthRequest="400" Clicked="DryerFeltTension"/>
+                            <Button Text="Drying Rate (Uncoated)" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="12" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontSize="18" FontAttributes="Bold"
+                            WidthRequest="400" Clicked="DryingRate"/>
+                            <Button Text="Drying Rate (Coated)" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="13" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontSize="18" FontAttributes="Bold"  
+                            WidthRequest="400" Clicked="DryingRateCoated"/>
+                            <Button Text="F/T/C Relationship" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="14" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontAttributes="Bold" FontSize="18" 
+                            WidthRequest="400" Clicked="FlowsTonsConsistencyRelationship"/>
+                            <Button Text="Formation - Blade Pulse Frequency" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="15" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontSize="18" FontAttributes="Bold" 
+                            WidthRequest="400" Clicked="FormationBladePulseFrequency"/>
+                            <Button Text="Fourdrinier Forming Length Guidelines" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="16" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontSize="18" FontAttributes="Bold" 
+                            WidthRequest="400" Clicked="FourdrinierFormingLengthGuidelines"/>
+                            <Button Text="Fourdrinier Shake Number" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="17" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontAttributes="Bold" FontSize="18" 
+                            WidthRequest="400" Clicked="FourdrinierShakeNumber"/>
+                            <Button Text="Gas Laws" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="18" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontAttributes="Bold" FontSize="18"
+                            WidthRequest="400" Clicked="GasLaws"/>
+                            <Button Text="Headbox Flow Rate" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="19" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontAttributes="Bold" FontSize="18"
+                            WidthRequest="400" Clicked="HeadboxFlowRate"/>
+                            <Button Text="Headbox Free Jet Length" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="20" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontSize="18" FontAttributes="Bold" 
+                            WidthRequest="400" Clicked="HeadboxFreeJetLength"/>
+                            <Button Text="Headbox Slice Flow Rate" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="21" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontSize="18" FontAttributes="Bold"  
+                            WidthRequest="400" Clicked="HeadboxSliceFlowRate"/>
+                            <Button Text="Hydraulic Pump Power" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="22" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontSize="18" FontAttributes="Bold" 
+                            WidthRequest="400" Clicked="HydraulicPumpPower"/>
+                            <Button Text="Inertia of a Roll" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="23" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontSize="18" FontAttributes="Bold" 
+                            WidthRequest="400" Clicked="InertiaOfARoll"/>
+                            <Button Text="Instantaneous Production Rate" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="24" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontSize="18" FontAttributes="Bold" 
+                            WidthRequest="400" Clicked="InstantaneousProductionRate"/>
+                            <Button Text="Lineal Paper on Roll" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="25" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontSize="18" FontAttributes="Bold" 
+                            WidthRequest="400" Clicked="LinealPaperOnRoll"/>
+                            <Button Text="Natural Frequency of Single DoF System" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="26" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontSize="18" FontAttributes="Bold" 
+                            WidthRequest="400" Clicked="NaturalFrequency"/>
+                            <Button Text="Paper Caliper" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="27" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontAttributes="Bold" FontSize="18"  
+                            WidthRequest="400" Clicked="PaperCaliper"/>
+                            <Button Text="Paper Web Draw" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="28" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontAttributes="Bold" FontSize="18" 
+                            WidthRequest="400" Clicked="PaperWebDraw"/>
+                            <Button Text="Pipeline and Channel Velocity" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="29" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontSize="18" FontAttributes="Bold" 
+                            WidthRequest="400" Clicked="PipelineAndChannelVelocity"/>
+                            <Button Text="Power" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="30" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontAttributes="Bold" FontSize="18" 
+                            WidthRequest="400" Clicked="Power"/>
+                            <Button Text="Press Impulse" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="31" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontAttributes="Bold" FontSize="18" 
+                            WidthRequest="400" Clicked="PressImpulse"/>
+                            <Button Text="Retention" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="32" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontAttributes="Bold" FontSize="18"
+                            WidthRequest="400" Clicked="Retention"/>
+                            <Button Text="Rimming Speed" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="33" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontAttributes="Bold" FontSize="18" 
+                            WidthRequest="400" Clicked="RimmingSpeed"/>
+                            <Button Text="Roll Rotational Speed" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="34" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontAttributes="Bold" FontSize="18"
+                            WidthRequest="400" Clicked="RollRotationalSpeed"/>
+                            <Button Text="Stock Thickness on Forming Fabric" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="35" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontSize="18" FontAttributes="Bold" 
+                            WidthRequest="400" Clicked="StockThickness"/>
+                            <Button Text="Tank Sizing and Capacity" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="36" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontSize="18" FontAttributes="Bold" 
+                            WidthRequest="400" Clicked="SizingAndCapacity"/>
+                            <Button Text="Tension Power" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="37" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontAttributes="Bold" FontSize="18" 
+                            WidthRequest="400" Clicked="TensionPower"/>
+                            <Button Text="Theoretical Head" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="38" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontAttributes="Bold" FontSize="18" 
+                            WidthRequest="400" Clicked="TheoreticalHead"/>
+                            <Button Text="Tissue Crepe" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="39" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontAttributes="Bold" FontSize="18"  
+                            WidthRequest="400" Clicked="TissueCrepe"/>
+                            <Button Text="Tissue Headbox Flow Rate" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="40" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontSize="18" FontAttributes="Bold" 
+                            WidthRequest="400" Clicked="TissueHeadboxFlowrate"/>
+                            <Button Text="Torque" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="41" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontAttributes="Bold" FontSize="18" 
+                            WidthRequest="400" Clicked="Torque"/>
+                            <Button Text="Vacuum Component Line Load" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="42" BorderRadius="15" BorderWidth="1" BorderColor="Black" FontSize="18" FontAttributes="Bold" 
+                            WidthRequest="400" Clicked="VacuumComponentLineLoad"/>
+                            <Button Text="Weir Water Flows (Rect)" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="43" BorderRadius="15" BorderWidth="1" BorderColor="Black" FontSize="18" FontAttributes="Bold" 
+                            WidthRequest="400" Clicked="WeirWaterFlows"/>
+                            <Button Text="Weir Water Flows (V)" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" Grid.Row="44" BorderRadius="15" BorderColor="Black" BorderWidth="1" FontSize="18" FontAttributes="Bold" 
+                            WidthRequest="400" Clicked="WeirWaterFlowsV"/>
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+  </ScrollView>
+</ContentPage>

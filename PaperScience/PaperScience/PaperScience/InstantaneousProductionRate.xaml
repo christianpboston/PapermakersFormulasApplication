@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PaperScience.InstantaneousProductionRate">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="CornflowerBlue">
+
+                <Frame BackgroundColor="White" Margin="10, 10, 10, 0" Padding="10, 10, 10, 10" BorderColor="Black">
+                    <Label x:Name="title" Text="Instantaneous Production Rate" FontAttributes="Bold" HorizontalOptions="Center" FontSize="20" TextColor="Black"></Label>
+                </Frame>
+
+                <StackLayout VerticalOptions="StartAndExpand">
+                    <StackLayout>
+                        <Frame BackgroundColor="White" Margin="10, 0, 10, 0" Padding="10, -30, 10, 10" BorderColor="Black">
+                            <Grid>
+                                <Label x:Name="s" TextColor="Black" Text="US" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" Grid.Row="1"></Label>
+                                <Switch x:Name="units" HorizontalOptions="End" Toggled="Units_Toggled" Grid.Row="1" Margin="0, -10, 10, 0"></Switch>
+
+                                <Label x:Name="label1" Text="Speed (ft/min)" HorizontalOptions="Start" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="2"></Label>
+                                <Entry x:Name="S" FontAttributes="Bold"  HorizontalTextAlignment="Center" HorizontalOptions="End"  TextColor="Black" FontSize="18" Grid.Row="2" WidthRequest="75" HeightRequest="40" ></Entry>
+
+                                <Label x:Name="label2" Text="Basis weight (lb/ream)" HorizontalOptions="Start" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="3"></Label>
+                                <Entry x:Name="BW" FontAttributes="Bold"  HorizontalTextAlignment="Center" HorizontalOptions="End"  TextColor="Black" FontSize="18" Grid.Row="3" WidthRequest="75" HeightRequest="40" ></Entry>
+
+                                <Label x:Name="label3" Text="Reel trim (in.)" HorizontalOptions="Start" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="4"></Label>
+                                <Entry x:Name="T" FontAttributes="Bold"  HorizontalTextAlignment="Center" HorizontalOptions="End"  TextColor="Black" FontSize="18" Grid.Row="4" WidthRequest="75" HeightRequest="40" ></Entry>
+
+                                <Label x:Name="label4" Text="Ream size (ft&#x00B2;)" HorizontalOptions="Start" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="5"></Label>
+                                <Entry x:Name="R" FontAttributes="Bold"  HorizontalTextAlignment="Center" HorizontalOptions="End"  TextColor="Black" FontSize="18" Grid.Row="5" WidthRequest="75" HeightRequest="40" ></Entry>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+
+                    <Button Text="Calculate" HorizontalOptions="Center" BackgroundColor="White" TextColor="Black" FontAttributes="Bold" FontSize="18" HeightRequest="50" WidthRequest="150" 
+                            BorderColor="Black" BorderWidth="1" Margin="0, 15, 0, 15" Clicked="Button_Clicked"/>
+
+                    <StackLayout>
+                        <Frame x:Name="answer" IsVisible="False" BackgroundColor="White" Margin="75, 0, 75, 10" Padding="0, -10, 0, 20">
+                            <Grid>
+                                <Label x:Name="label5" Text="Production (lb/h)" HorizontalOptions="Center" FontSize="18" FontAttributes="Bold" TextColor="Black" Grid.Row="1"></Label>
+                                
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+
+                    <StackLayout>
+                        <Frame BackgroundColor="White" Margin="10, 10, 10, 10" Padding="10, -10, 10, 10" BorderColor="Black">
+                            <Grid>
+                                <Label x:Name="label6" Text="Note: Multiply the result by 0.012 to convert to ton/d" HorizontalOptions="Start" FontSize="16" FontAttributes="Bold" TextColor="Black" Grid.Row="1"></Label>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
